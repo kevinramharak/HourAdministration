@@ -7,3 +7,4 @@
             <?php include_once '../../navs/manager.php'; ?>
         </div>
     </div>
+</div>

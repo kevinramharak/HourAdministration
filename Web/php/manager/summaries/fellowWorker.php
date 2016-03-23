@@ -1,7 +1,10 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: kevin
- * Date: 23-3-2016
- * Time: 14:52
- */
+<html>
+<?php include_once '../../head.php'; ?>
+<body>
+<div class="container">
+    <div class="col-xs-12">
+        <div class="row">
+            <?php include_once '../../navs/manager.php'; ?>
+        </div>
+    </div>
+</div>
