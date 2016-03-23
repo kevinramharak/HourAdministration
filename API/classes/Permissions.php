@@ -8,6 +8,7 @@
  */
 class Permissions extends API
 {
+    // Verkrijgt permissie
     function getPermission($employeeID) {
         $SQL = "SELECT permission FROM employees WHERE employeeID = ?";
         $this->setPDO($this->getPDO()->prepare($SQL));
@@ -15,6 +16,7 @@ class Permissions extends API
         $this->getPDO()->execute();
         return $this->getPDO()->fetch(PDO::FETCH_ASSOC)['permission'];
     }
+    // Checkt of de user de permission heeft
     function checkPermission($employeeID, $needed) {
         if($this->getPermission($employeeID) == $needed) {
             return true;
