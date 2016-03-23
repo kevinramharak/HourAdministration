@@ -29,6 +29,12 @@ define('DB_PASS', "pass");
             $this->PDO->execute();
             return $this->PDO->fetch(PDO::FETCH_ASSOC)['firstname'];
         }
+        function getLastnameFromEmpID($empID) {
+            $this->PDO = $this->PDO->prepare("SELECT lastname FROM Employees WHERE EmployeeID = ?");
+            $this->PDO->bindParam(1, $empID);
+            $this->PDO->execute();
+            return $this->PDO->fetch(PDO::FETCH_ASSOC)['lastname'];
+        }
         function __destruct()
         {
             //$this->PDO->close();
