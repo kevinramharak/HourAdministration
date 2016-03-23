@@ -2,15 +2,20 @@
 
 require_once "Database.php";
 require_once "Employees.class.php";
+require_once "Permissions.php";
 
-class API extends Employees
+class API
 {
+    private $employees;
+    private $permissions;
     private $PDO;
     private $passwordHash;
     private $vars;
     function __construct()
     {
         $this->PDO = new Database();
+        $this->employees = new Employees();
+        $this->permissions = new Permissions();
     }
 
     /**
@@ -64,7 +69,7 @@ class API extends Employees
     function action($action) {
         switch($action) {
             case "registerAccount":
-                $this->registerAccount($this->getVars()['id'], $this->getVars()['firstname'], $this->getVars()['prefix'], $this->getVars()['lastname'], $this->getVars()['birthdate'], $this->getVars()['sex'], $this->getVars()['employeeid'], $this->getVars()['parttimefactor']);
+                $this->registerAccount(null, $this->getVars()['firstname'], $this->getVars()['prefix'], $this->getVars()['lastname'], $this->getVars()['birthdate'], $this->getVars()['sex'], null, $this->getVars()['parttimefactor']);
                 break;
         }
     }
