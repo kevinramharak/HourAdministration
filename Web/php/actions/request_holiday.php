@@ -1,7 +1,4 @@
 <?php
-// todo: fix that session gets set when logging in
-$_SESSION['employeeid'] = 1;
-
 if(isset($_GET['from'])&&isset($_GET['until'])&&isset($_SESSION['employeeid']))
 {
   require_once '../../../API/Registration_Holiday.class.php';
