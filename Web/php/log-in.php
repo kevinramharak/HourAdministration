@@ -16,8 +16,18 @@
                 <input type="text" class="form-control" placeholder="Wachtwoord">
             </div>
             <div class="panel-body">
-                <button type="submit" class="btn btn-primary">Inloggen</button>
-                <button type="submit" class="btn btn-danger">Wachtwoord vergeten?</button>
+                <div class="col-xs-12">
+                    <div class="row">
+                        <button type="submit" class="col-xs-12 btn btn-primary">Inloggen</button>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="col-xs-12">
+                    <div class="row">
+                        <button type="submit" class="col-xs-12 btn btn-danger">Wachtwoord vergeten?</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
