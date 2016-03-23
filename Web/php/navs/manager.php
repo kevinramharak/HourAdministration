@@ -8,14 +8,22 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="../manager/home.php"">HourAdministration</a>
+            <a class="navbar-brand" href="../fellow-worker/home.php"">HourAdministration</a>
+            <img style="width:45px; height:45px; margin:4px 0px;" src="../../img/logo.png" class="logo">
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="../manager/approveLeaveRequests.php">Goedkeuren verlofaanvragen</a></li>
-                <li><a href="../manager/modifyProjectHours.php">Wijzigen projecturen</a></li>
-                <li><a href="../manager/">Overzichten</a></li>
+                <li><a href="#">Goedkeuren verlofaanvragen</a></li>
+                <li><a href="#">Wijzigen projecturen</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Overzichten <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Overzicht werknemers</a></li>
+                        <li><a href="#">Details werknemers</a></li>
+                        <li><a href="#">Totale gegevens werknemers</a></li>
+                    </ul>
+                </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
