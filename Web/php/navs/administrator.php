@@ -9,7 +9,6 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="../administrative-assistent/home.php">HourAdministration</a>
-                <img style="width:45px; height:45px; margin:4px 0;" src="../../img/logo.png" class="logo">
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
