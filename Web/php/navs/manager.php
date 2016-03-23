@@ -13,11 +13,9 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="#">Overzicht werknemers</a></li>
-                <li><a href="#">Aanwezigheid</a></li>
-                <li><a href="#">Details werknemers</a></li>
-                <li><a href="#">Verlof gegevens</a></li>
-                <li><a href="#">Projecturen</a></li>
+                <li><a href="#">Goedkeuren verlofaanvragen</a></li>
+                <li><a href="#">Wijzigen projecturen</a></li>
+                <li><a href="#">Overzichten</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
