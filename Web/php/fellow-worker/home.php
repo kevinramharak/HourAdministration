@@ -18,6 +18,5 @@
             </div>
         </div>
     </div>
-    <?php include_once 'body.php'; ?>
 </body>
 </html>
