@@ -1,36 +1,36 @@
 <html>
 <?php include 'head.php'; ?>
 <body>
-<div class="col-xs-12 col-md-2 col-md-offset-5">
-    <div class="row">
-        <img src="../img/logo.png" alt="logo" class="logo">
-    </div>
-</div>
-<div class="col-xs-12 col-md-2 col-md-offset-5">
+<div class="container">
+<div class="col-xs-12 col-md-4 col-md-offset-4">
+    <h1 class="title">HourAdministration</h1>
     <div class="row">
         <div class="panel panel-default">
             <div class="panel-body">
-                <input type="text" class="form-control" placeholder="Gebruikersnaam">
+                <label>Gebruikersnaam:</label>
+                <input type="text" class="form-control" placeholder="Voer gebruikersnaam in">
             </div>
             <div class="panel-body">
-                <input type="text" class="form-control" placeholder="Wachtwoord">
+                <label>Wachtwoord:</label>
+                <input type="text" class="form-control" placeholder="Voer wachtwoord in">
             </div>
             <div class="panel-body">
                 <div class="col-xs-12">
                     <div class="row">
-                        <button type="submit" class="col-xs-12 btn btn-primary">Inloggen</button>
+                        <button type="submit" class="btn btn-primary">Inloggen</button>
                     </div>
                 </div>
             </div>
             <div class="panel-body">
                 <div class="col-xs-12">
                     <div class="row">
-                        <button type="submit" class="col-xs-12 btn btn-danger">Wachtwoord vergeten?</button>
+                        <button type="submit" class="btn btn-primary">Wachtwoord vergeten?</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 </body>
 </html>
