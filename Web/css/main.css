@@ -10,3 +10,6 @@ img.logo {
     display: inline-block;
     padding: 2em;
 }
+.title {
+    text-align: center;
+}
