@@ -8,7 +8,7 @@
         </div>
         <div class="col-xs-12">
             <div class="row">
-                <?php include_once 'nav.php'; ?>
+                <?php include_once '../navs/fellowworker.php'; ?>
             </div>
         </div>
         <div class="col-xs-12">
