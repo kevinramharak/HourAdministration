@@ -13,4 +13,5 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> -->
   <script src="../js/bootstrap.min.js"></script>
   <!-- [endif]-->
+  <link href="../css/main.css" rel="stylesheet">
 </head>

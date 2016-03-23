@@ -2,9 +2,9 @@
 require_once "API.php";
 class Employees extends API
 {
-    function registerAccount($id, $firstname, $prefix, $lastname, $birthdate, $sex, $employeeID, $parttimeFactor)
+    function registerAccount($id, $firstname, $prefix, $lastname, $birthdate, $sex, $employeeID, $parttimeFactor, $password)
     {
-        $SQL = "INSERT INTO employees () VALUES(?, ?, ?, ?, ?, ?, ?, ?)";
+        $SQL = "INSERT INTO employees (columns) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)";
         $this->setPDO($this->getPDO->prepare($SQL));
         $this->getPDO->bindParam(1, $id);
         $this->getPDO->bindParam(2, $firstname);
@@ -14,6 +14,7 @@ class Employees extends API
         $this->getPDO->bindParam(6, $sex);
         $this->getPDO->bindParam(7, $employeeID);
         $this->getPDO->bindParam(8, $parttimeFactor);
+        $this->getPDO->bindParam(9, password_hash($password, PASSWORD_DEFAULT));
         $this->getPDO->execute();
         return $this->getPDO->fetchAll(PDO::FETCH_ASSOC);
     }

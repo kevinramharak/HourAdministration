@@ -2,3 +2,11 @@
   Main css file
   Hier komt onze eigen css
 */
+body {
+    background-color: #dcdcdc;
+}
+img.logo {
+    width: 100%;
+    display: inline-block;
+    padding: 2em;
+}
