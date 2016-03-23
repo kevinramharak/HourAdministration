@@ -49,6 +49,15 @@
                 </tr>
             </table>
         </div>
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="form-group col-xs-12 col-md-2 col-md-offset-10">
+                    <button type="submit" class="col-xs-12 btn btn-primary">
+                        <div class="row">Goedgekeurd</div>
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 </body>
