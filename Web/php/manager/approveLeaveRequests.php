@@ -1,20 +1,17 @@
 <html>
-<?php include_once '../head.php'; ?>
 <body>
 <div class="container">
+    <?php include_once '../head.php'; ?>
+    <?php include_once '../navs/manager.php'; ?>
     <div class="col-xs-12">
-        <div class="row">
-            <?php include_once '../navs/manager.php'; ?>
-        </div>
     </div>
-    <div class="col-xs-12">
-        <div class="row">
-            <h1>Manager</h1>
-        </div>
-        <div class="panel panel-default">
-            <!-- Default panel contents -->
-            <div class="panel-heading">Verlofaanvragen</div>
-            <!-- Table -->
+    <div class="row">
+    </div>
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Goedkeuren verlofaanvragen</div>
+        <!-- Table -->
+        <table class="table">
             <table class="table">
                 <tr>
                     <th colspan="2">Werknemer</th>
@@ -53,7 +50,6 @@
                 </div>
             </div>
         </div>
-    </div>
 </div>
 </body>
 </html>
