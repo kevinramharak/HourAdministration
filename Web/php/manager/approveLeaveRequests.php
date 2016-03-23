@@ -28,20 +28,20 @@
                     <td>dd/mm/jjjj</td>
                     <td></td>
                 </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><input type="checkbox" name="denied"> Afgekeurd <input type="checkbox" name="approved"> Goedgekeurd </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+                <?php
+                    require_once "../../../API/index.php";
+                    $s = new Submits();
+                    $u = new Users();
+                    for($i = 0; $i < 1; $i++) {
+                        echo '<tr>';
+                        echo '<td>' . $u->getFirstnameFromEmpID($s->getSubmits()[$i]['EmployeeID']) . '</td>';
+                        echo '<td>' . $u->getLastnameFromEmpID($s->getSubmits()[$i]['EmployeeID']) . '</td>';
+                        echo '<td>' . $s->getStartDateFromEmpID($s->getSubmits()[$i]['EmployeeID']) . '</td>';
+                        echo '<td>' . $s->getEndDateFromEmpID($s->getSubmits()[$i]['EmployeeID']) . '</td>';
+                        echo '<td>Goedkeuren/Afkeuren</td>';
+                        echo '</tr>';
+                    }
+                    ?>
             </table>
         </div>
         <div class="col-xs-12">
