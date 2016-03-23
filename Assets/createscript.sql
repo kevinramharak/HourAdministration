@@ -8,7 +8,7 @@ CREATE TABLE Employees
   lastname VARCHAR(20),
   birthdate DATE,
   sex ENUM('m', 'f'),
-  EmployeeID int,
+  EmployeeID int UNIQUE,
   PartTimeFactor DECIMAL(4,3),
   CHECK (PartTimeFactor < 1)
 );
@@ -18,7 +18,7 @@ CREATE TABLE Users
   ID INT PRIMARY KEY AUTO_INCREMENT,
   EmployeeID INT,
   Password VARCHAR(70),
-  Permission ENUM(1, 2, 3),
+  Permission ENUM('1','2','3'),
   FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID)
 );
 
