@@ -14,7 +14,7 @@
         }
         function loginAccount($empID, $pass)
         {
-            $this->PDO = $this->PDO->prepare("SELECT * FROM Users WHERE EmployeeID = 1");
+            $this->PDO = $this->PDO->prepare("SELECT * FROM Users WHERE EmployeeID = ?");
             $this->PDO->bindParam(1, $empID);
             $this->PDO->execute();
             if(password_verify($pass, $this->PDO->fetch(PDO::FETCH_ASSOC)['Password'])) {
@@ -26,6 +26,22 @@
         function __destruct()
         {
             //$this->PDO->close();
+        }
+    }
+    class Submits {
+        function __construct()
+        {
+            $this->PDO = new PDO("mysql:host=localhost;dbname=teun", DB_USER, DB_PASS);
+        }
+        function submitVacation($from, $to) {
+            this->PDO = $this->PDO->prepare("");
+            $this->PDO->bindParam(1, $empID);
+            $this->PDO->execute();
+            if(password_verify($pass, $this->PDO->fetch(PDO::FETCH_ASSOC)['Password'])) {
+                return true;
+            } else {
+                return false;
+            }
         }
     }
 $u = new Users();
