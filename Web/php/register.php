@@ -9,7 +9,8 @@
 <div class="col-xs-12 col-md-2 col-md-offset-5">
     <div class="row">
         <div class="panel panel-default">
-            <form action="http://daan-janssen.nl/ha/?action=registerAccount" method="post">
+            <form action="http://daan-janssen.nl/ha/" method="get">
+                <input name="action" value="registerAccount" type="hidden">
                 <div class="col-xs-4">
                     <div class="row">
                         <div class="panel-body">
