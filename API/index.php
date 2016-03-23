@@ -1,11 +1,5 @@
 <?php
     // Database details
-<<<<<<< Updated upstream
-    define(DB_IP, "localhost");
-    define(DB_TABLE, "daanjans_ha");
-    define(DB_USER, "daanjans_ha");
-    define(DB_PASS, "adminadmin");
-=======
     define('DB_IP', "localhost");
     define('DB_NAME', "teun");
     define('DB_USER', "root");
@@ -23,7 +17,11 @@
             $this->PDO = $this->PDO->prepare("SELECT * FROM Users WHERE EmployeeID = 1");
             $this->PDO->bindParam(1, $empID);
             $this->PDO->execute();
-            print_r($this->PDO->fetchAll(PDO::FETCH_ASSOC));
+            if(password_verify($pass, $this->PDO->fetch(PDO::FETCH_ASSOC)['Password'])) {
+                return true;
+            } else {
+                return false;
+            }
         }
         function __destruct()
         {
@@ -32,7 +30,3 @@
     }
 $u = new Users();
 //echo password_hash("daan", PASSWORD_DEFAULT);
-if($u->loginAccount(1, "daan")) {
-    echo '<3';
-}
->>>>>>> Stashed changes
