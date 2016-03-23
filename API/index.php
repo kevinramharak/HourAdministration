@@ -54,6 +54,18 @@ define('DB_PASS', "pass");
             $this->PDO->execute();
             return $this->PDO->fetchAll(PDO::FETCH_ASSOC);
         }
+        function getStartDateFromEmpID($empID) {
+            $this->PDO = $this->PDO->prepare("SELECT StartDate FROM Registration_Holidays WHERE EmployeeID = ?");
+            $this->PDO->bindParam(1, $empID);
+            $this->PDO->execute();
+            return $this->PDO->fetch(PDO::FETCH_ASSOC)['StartDate'];
+        }
+        function getEndDateFromEmpID($empID) {
+            $this->PDO = $this->PDO->prepare("SELECT EndDate FROM Registration_Holidays WHERE EmployeeID = ?");
+            $this->PDO->bindParam(1, $empID);
+            $this->PDO->execute();
+            return $this->PDO->fetch(PDO::FETCH_ASSOC)['EndDate'];
+        }
     }
 $u = new Users();
 //echo password_hash("daan", PASSWORD_DEFAULT);
