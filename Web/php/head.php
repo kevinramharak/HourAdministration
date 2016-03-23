@@ -15,5 +15,4 @@
   <script src="http://localhost/HourAdministration/Web/js/bootstrap.min.js"></script>
   <!-- [endif]-->
   <link href="http://localhost/HourAdministration/Web/css/main.css" rel="stylesheet">
-  <script src="../js/jquery/jquery-2.2.2.js"></script>
 </head>
