@@ -27,7 +27,7 @@ define('DB_PASS', "pass");
             $this->PDO = $this->PDO->prepare("SELECT firstname FROM Employees WHERE EmployeeID = ?");
             $this->PDO->bindParam(1, $empID);
             $this->PDO->execute();
-            return $this->PDO->fetchAll(PDO::FETCH_ASSOC);
+            return $this->PDO->fetch(PDO::FETCH_ASSOC)['firstname'];
         }
         function __destruct()
         {
