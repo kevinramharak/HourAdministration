@@ -1,5 +1,4 @@
 <html>
-<?php include_once '../head.php'; ?>
 <body>
     <div class="container">
         <div class="col-xs-10 col-xs-offset-1 col-md-1 col-md-offset-0">
@@ -9,7 +8,7 @@
         </div>
         <div class="col-xs-12">
             <div class="row">
-                <?php include_once '../navs/fellowworker.php'; ?>
+                <?php include_once 'nav.php'; ?>
             </div>
         </div>
         <div class="col-xs-12">
