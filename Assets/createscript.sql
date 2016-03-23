@@ -18,7 +18,7 @@ CREATE TABLE Users
   ID INT PRIMARY KEY AUTO_INCREMENT,
   EmployeeID INT,
   Password VARCHAR(70),
-  Permission ENUM('1','2','3'),
+  Permission ENUM('0','1','2'),
   FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID)
 );
 
@@ -33,8 +33,8 @@ CREATE TABLE Registration_Illness
 (
   ID INT PRIMARY KEY AUTO_INCREMENT,
   EmployeeID INT,
-  StartDate DATE,
-  EndDate DATE,
+  StartDate DATETIME,
+  EndDate DATETIME,
   FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID)
 );
 
