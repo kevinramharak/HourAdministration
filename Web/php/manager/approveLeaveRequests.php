@@ -21,17 +21,17 @@
             <div class="panel-heading">Verlofaanvragen</div>
             <!-- Table -->
             <table class="table">
-                <thead>
+                <tr>
                     <th colspan="2">Werknemer</th>
                     <th colspan="2">Verlofaanvraagdata</th>
-                    <th>Akkoord</th>
-                </thead>
+                    <th >Akkoord</th>
+                </tr>
                 <tr>
                     <td>voornaam</td>
                     <td>achternaam</td>
                     <td>dd/mm/jjjj</td>
                     <td>dd/mm/jjjj</td>
-                    <td></td>
+                    <td><input type="checkbox" name="denied"> Afgekeurd <input type="checkbox" name="approved"> Goedgekeurd </td>
                 </tr>
                 <tr>
                     <td></td>

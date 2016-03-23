@@ -6,6 +6,5 @@
     <h1>Welkom!</h1>
   </div>
 </div>
-</div>
 </body>
 </html>
