@@ -18,9 +18,9 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Overzichten <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="../manager/summaries/allFellowWorkers.php">Overzicht werknemers</a></li>
-                        <li><a href="../manager/summaries/fellowWorker.php">Details werknemers</a></li>
-                        <li><a href="../manager/summaries/statistics.php">Totale gegevens werknemers</a></li>
+                        <li><a href="../manager/allFellowWorkers.php">Overzicht werknemers</a></li>
+                        <li><a href="../manager/fellowWorker.php">Details werknemers</a></li>
+                        <li><a href="../manager/statistics.php">Totale gegevens werknemers</a></li>
                     </ul>
                 </li>
             </ul>
