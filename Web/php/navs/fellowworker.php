@@ -14,10 +14,13 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="#">Ziek</a></li>
-                <li><a href="#">Vakantie</a></li>
-                <li><a href="#">Uren</a></li>
-                <li><a href="#">Overzicht</a></li>
+                <li><a href="../fellow-worker/home.php">Home</a></li>
+                <li><a href="../fellow-worker/vacation.php">Vrij aanvragen</a></li>
+                <li><a href="../fellow-worker/sick.php">Ziek melden</a></li>
+                <li><a href="../fellow-worker/hours.php">Uren registreren</a></li>
+                <li><a href="../fellow-worker/overtime.php">Overwerk registreren</a></li>
+                <li><a href="../fellow-worker/agenda.php">Agenda</a></li>
+                <li><a href="../fellow-worker/summary.php">Overzicht</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
