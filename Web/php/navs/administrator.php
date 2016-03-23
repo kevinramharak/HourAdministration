@@ -15,9 +15,9 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="../administrative-assistent/parameters.php">Parameters</a></li>
-                    <li><a href="../administrative-assistent/setNextHolidayDays.php">Meenemen vakantiedagen aangeven</a></li>
+                    <li><a href="../administrative-assistent/setNextHolidayDays.php">Meegenomen vakantiedagen aangeven</a></li>
                     <li><a href="../administrative-assistent/holidays.php">Feestdagen</a></li>
-                    <li><a href="../administrative-assistent/fellowWorker.php">Werknemer overzicht</a></li>
+                    <li><a href="../administrative-assistent/fellowWorker.php">Details werknemers</a></li>
                     <li><a href="../administrative-assistent/allFellowWorkers.php">Werknemers overzicht</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Werknemer opties <span class="caret"></span></a>
