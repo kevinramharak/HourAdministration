@@ -8,7 +8,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">HourAdministration</a>
+            <a class="navbar-brand" href="../fellow-worker/home.php"">HourAdministration</a>
+            <img style="width:45px; height:45px; margin:4px 0px;" src="../../img/logo.png" class="logo">
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
