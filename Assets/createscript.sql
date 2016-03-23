@@ -67,7 +67,7 @@ CREATE TABLE Registration_Holidays
   EmployeeID INT,
   StartDate DATE,
   EndDate DATE,
-  Status BOOLEAN,
+  Status ENUM('pending','approved','denied'),
   Reason VARCHAR(500),
   FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID)
 );
