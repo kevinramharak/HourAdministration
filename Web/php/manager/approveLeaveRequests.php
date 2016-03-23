@@ -26,14 +26,14 @@
                     <td>achternaam</td>
                     <td>dd/mm/jjjj</td>
                     <td>dd/mm/jjjj</td>
-                    <td><input type="checkbox" name="denied"> Afgekeurd <input type="checkbox" name="approved"> Goedgekeurd </td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
+                    <td><input type="checkbox" name="denied"> Afgekeurd <input type="checkbox" name="approved"> Goedgekeurd </td>
                 </tr>
                 <tr>
                     <td></td>
