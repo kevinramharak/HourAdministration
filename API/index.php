@@ -17,7 +17,11 @@
             $this->PDO = $this->PDO->prepare("SELECT * FROM Users WHERE EmployeeID = 1");
             $this->PDO->bindParam(1, $empID);
             $this->PDO->execute();
-            print_r($this->PDO->fetchAll(PDO::FETCH_ASSOC));
+            if(password_verify($pass, $this->PDO->fetch(PDO::FETCH_ASSOC)['Password'])) {
+                return true;
+            } else {
+                return false;
+            }
         }
         function __destruct()
         {
@@ -26,6 +30,3 @@
     }
 $u = new Users();
 //echo password_hash("daan", PASSWORD_DEFAULT);
-if($u->loginAccount(1, "daan")) {
-    echo '<3';
-}

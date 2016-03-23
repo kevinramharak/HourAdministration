@@ -19,7 +19,7 @@
                                         <label>Van:</label>
                                     </div>
                                     <div class="form-group col-xs-12 col-md-8">
-                                        <input type="datetime-local" class="col-md-7 form-control">
+                                        <input type="datetime-local" class="col-md-7 form-control" id="from">
                                     </div>
                                 </div>
                                 <div class="col-xs-12">
@@ -27,7 +27,7 @@
                                         <label>Tot:</label>
                                     </div>
                                     <div class="form-group col-xs-12 col-md-8">
-                                        <input type="datetime-local" class="col-md-7 form-control">
+                                        <input type="datetime-local" class="col-md-7 form-control" id="until">
                                     </div>
                                 </div>
                                 <div class="col-xs-12">
