@@ -8,11 +8,11 @@
     // Require
     require_once "classes/API.php";
 
-    if(!empty($_GET['action']) && !empty($_POST)) {
+    if(!empty($_GET['action']) && !empty($_GET)) {
         // <3
         $API = new API();
         $API->action($_GET['action']);
-        $API->setVars($_POST);
+        $API->setVars($_GET);
     } else {
         // </3
         echo json_encode([

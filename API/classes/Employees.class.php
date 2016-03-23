@@ -4,7 +4,7 @@ class Employees extends API
 {
     function registerAccount($id, $firstname, $prefix, $lastname, $birthdate, $sex, $employeeID, $parttimeFactor, $password)
     {
-        $SQL = "INSERT INTO employees (columns) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        $SQL = "INSERT INTO Employees (ID, firstname, prefix, lastname, birthdate, sex, EmployeeID, PartTimeFactor) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)";
         $this->setPDO($this->getPDO->prepare($SQL));
         $this->getPDO->bindParam(1, $id);
         $this->getPDO->bindParam(2, $firstname);
