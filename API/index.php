@@ -9,6 +9,7 @@
     require_once "classes/API.php";
 
     if(!empty($_GET['action']) && !empty($_POST)) {
+        // <3
         $API = new API();
         $API->action($_GET['action']);
         $API->setVars($_POST);
