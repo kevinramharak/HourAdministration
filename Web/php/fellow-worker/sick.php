@@ -16,6 +16,14 @@
                             <form>
                                 <div class="col-xs-12">
                                     <div class="col-xs-12 col-md-6">
+                                        <label>Datum:</label>
+                                    </div>
+                                    <div class="form-group col-xs-12 col-md-6">
+                                        <?php echo date("d-m-Y"); ?>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="col-xs-12 col-md-6">
                                         <label>Vanaf:</label>
                                     </div>
                                     <div class="form-group col-xs-12 col-md-6">
