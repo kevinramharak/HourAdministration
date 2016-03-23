@@ -1,11 +1,5 @@
 <?php
     // Database details
-<<<<<<< Updated upstream
-    define(DB_IP, "localhost");
-    define(DB_TABLE, "daanjans_ha");
-    define(DB_USER, "daanjans_ha");
-    define(DB_PASS, "adminadmin");
-=======
     define('DB_IP', "localhost");
     define('DB_NAME', "teun");
     define('DB_USER', "root");
@@ -35,4 +29,3 @@ $u = new Users();
 if($u->loginAccount(1, "daan")) {
     echo '<3';
 }
->>>>>>> Stashed changes
