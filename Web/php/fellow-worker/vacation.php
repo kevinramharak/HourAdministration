@@ -15,19 +15,19 @@
                         <div class="panel-body">
                             <form>
                                 <div class="col-xs-12">
-                                    <div class="col-xs-12 col-md-6">
+                                    <div class="col-xs-12 col-md-4">
                                         <label>Van:</label>
                                     </div>
-                                    <div class="form-group col-xs-12 col-md-6">
-                                        <input type="time" class="col-md-7 form-control">
+                                    <div class="form-group col-xs-12 col-md-8">
+                                        <input type="datetime-local" class="col-md-7 form-control">
                                     </div>
                                 </div>
                                 <div class="col-xs-12">
-                                    <div class="col-xs-12 col-md-6">
+                                    <div class="col-xs-12 col-md-4">
                                         <label>Tot:</label>
                                     </div>
-                                    <div class="form-group col-xs-12 col-md-6">
-                                        <input type="time" class="col-md-7 form-control">
+                                    <div class="form-group col-xs-12 col-md-8">
+                                        <input type="datetime-local" class="col-md-7 form-control">
                                     </div>
                                 </div>
                                 <div class="col-xs-12">
