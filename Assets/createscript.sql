@@ -1,5 +1,4 @@
-USE daanjans_ha;
-
+USE teun;
 CREATE TABLE Employees
 (
   ID int PRIMARY KEY AUTO_INCREMENT,
@@ -65,8 +64,8 @@ CREATE TABLE Registration_Holidays
 (
   ID INT PRIMARY KEY AUTO_INCREMENT,
   EmployeeID INT,
-  StartDate DATE,
-  EndDate DATE,
+  StartDate DATETIME,
+  EndDate DATETIME,
   Status ENUM('pending','approved','denied'),
   Reason VARCHAR(500),
   FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID)

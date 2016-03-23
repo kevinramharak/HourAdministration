@@ -1,9 +1,9 @@
 <?php
-    // Database details
-    define('DB_IP', "localhost");
-    define('DB_NAME', "teun");
-    define('DB_USER', "root");
-    define('DB_PASS', "");
+// Database details
+define('DB_IP', "localhost");
+define('DB_NAME', "teun");
+define('DB_USER', "root");
+define('DB_PASS', "pass");
     class Users extends PDO{
         private $passwordHash;
         private $userID;
