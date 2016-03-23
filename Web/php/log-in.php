@@ -13,7 +13,7 @@
                 </div>
                 <div class="panel-body">
                     <label>Wachtwoord:</label>
-                    <input name="password" type="text" class="form-control" placeholder="Voer wachtwoord in">
+                    <input name="password" type="password" class="form-control" placeholder="Voer wachtwoord in">
                 </div>
                 <div class="panel-body">
                     <div class="col-xs-12">
