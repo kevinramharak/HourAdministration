@@ -21,7 +21,7 @@
                     <li><a href="../administrative-assistent/fellowWorker.php">Werknemer overzicht</a></li>
                     <li><a href="../administrative-assistent/allFellowWorkers.php">Werknemers overzicht</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Instellingen <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Werknemer opties <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                           <li><a href="../administrative-assistent/editFellowWorker.php">Werknemer aanpassen</a></li>
                           <li><a href="../administrative-assistent/addFellowWorker.php">Werknemer toevoegen</a></li>
