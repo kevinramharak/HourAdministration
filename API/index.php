@@ -34,14 +34,19 @@
             $this->PDO = new PDO("mysql:host=localhost;dbname=teun", DB_USER, DB_PASS);
         }
         function submitVacation($from, $to) {
-            this->PDO = $this->PDO->prepare("");
-            $this->PDO->bindParam(1, $empID);
+            $this->PDO = $this->PDO->prepare("");
+            $this->PDO->bindParam(1, $to);
             $this->PDO->execute();
-            if(password_verify($pass, $this->PDO->fetch(PDO::FETCH_ASSOC)['Password'])) {
+            if(password_verify($from, $this->PDO->fetch(PDO::FETCH_ASSOC)['Password'])) {
                 return true;
             } else {
                 return false;
             }
+        }
+        function getSubmits() {
+            $this->PDO = $this->PDO->prepare("SELECT * FROM Registration_Holidays WHERE Status = 0");
+            $this->PDO->execute();
+            return $this->PDO->fetchAll(PDO::FETCH_ASSOC);
         }
     }
 $u = new Users();
