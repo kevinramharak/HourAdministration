@@ -23,6 +23,12 @@
                 return false;
             }
         }
+        function getFirstnameFromEmpID($empID) {
+            $this->PDO = $this->PDO->prepare("SELECT firstname FROM Employees WHERE EmployeeID = ?");
+            $this->PDO->bindParam(1, $empID);
+            $this->PDO->execute();
+            return $this->PDO->fetchAll(PDO::FETCH_ASSOC);
+        }
         function __destruct()
         {
             //$this->PDO->close();
@@ -44,7 +50,7 @@
             }
         }
         function getSubmits() {
-            $this->PDO = $this->PDO->prepare("SELECT * FROM Registration_Holidays WHERE Status = 0");
+            $this->PDO = $this->PDO->prepare("SELECT * FROM Registration_Holidays WHERE Status = 'pending'");
             $this->PDO->execute();
             return $this->PDO->fetchAll(PDO::FETCH_ASSOC);
         }

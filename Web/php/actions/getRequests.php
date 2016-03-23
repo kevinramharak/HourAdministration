@@ -1,4 +1,6 @@
 <?php
     require_once "../../../API/index.php";
     $s = new Submits();
-    return $s->getSubmits();
+    $u = new Users();
+    print_r($s->getSubmits());
+    print_r($u->getFirstnameFromEmpID(1));
