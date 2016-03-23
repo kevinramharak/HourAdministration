@@ -12,5 +12,5 @@ if(isset($_GET['from'])&&isset($_GET['until'])&&isset($_SESSION['employeeid']))
 
   header("Location: http://localhost/HourAdministration/Web/php/fellow-worker/");
 } else {
-  header("Location: http://localhost/HourAdministration/Web/php/fellow-worker/vacation.php?err=somethingwentwrong");
+  //header("Location: http://localhost/HourAdministration/Web/php/fellow-worker/vacation.php?err=somethingwentwrong");
 }

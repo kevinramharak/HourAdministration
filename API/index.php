@@ -3,7 +3,7 @@
 define('DB_IP', "localhost");
 define('DB_NAME', "teun");
 define('DB_USER', "root");
-define('DB_PASS', "");
+define('DB_PASS', "pass");
     class Users extends PDO{
         private $passwordHash;
         private $userID;
@@ -18,6 +18,7 @@ define('DB_PASS', "");
             $this->PDO->bindParam(1, $empID);
             $this->PDO->execute();
             if(password_verify($pass, $this->PDO->fetch(PDO::FETCH_ASSOC)['Password'])) {
+                $_SESSION['employeeid'] = $empID;
                 return true;
             } else {
                 return false;
