@@ -13,7 +13,7 @@ class Employee extends PDO {
   }
 
   public function register($firstname, $prefix, $lastname, $birthdate, $sex, $employeeid, $parttimefactor){
-    $this->PDO = $this->PDO->prepare("INSERT INTO employees VALUES (:firstname, :prefix, :lastname, :birthdate, :sex, :employeeid, :parttimefactor)");
+    $this->PDO = $this->PDO->prepare("INSERT INTO employees VALUES (null, :firstname, :prefix, :lastname, :birthdate, :sex, :employeeid, :parttimefactor)");
     $this->PDO->bindParam(':firstname',$firstname);
     $this->PDO->bindParam(':prefix',$prefix);
     $this->PDO->bindParam(':lastname',$lastname);
@@ -25,6 +25,7 @@ class Employee extends PDO {
 
     $password = password_hash('teun', PASSWORD_DEFAULT);
 
+    $this->PDO = new PDO("mysql:host=localhost;dbname=teun", DB_USER, DB_PASS);
     $this->PDO = $this->PDO->prepare("INSERT INTO users VALUES (null, :employeeid, :pass, '0')");
     $this->PDO->bindParam(':employeeid',$employeeid);
     $this->PDO->bindParam(':pass',$password);

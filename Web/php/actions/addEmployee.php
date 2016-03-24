@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(isset($_GET['first-name']) && isset($_GET['prefix'])&& isset($_GET['last-name'])&& isset($_GET['date-of-birth'])&& isset($_GET['sex'])&& isset($_GET['employee-number'])&& isset($_GET['factor-time'])){
+if(isset($_GET['first-name']) && isset($_GET['prefix'])&& isset($_GET['last-name'])&& isset($_GET['date-of-birth'])&& isset($_GET['gender'])&& isset($_GET['employee-number'])&& isset($_GET['factor-time'])){
 
   require_once '../../../API/Employee.class.php';
 
@@ -10,7 +10,7 @@ if(isset($_GET['first-name']) && isset($_GET['prefix'])&& isset($_GET['last-name
   $prefix = $_GET['prefix'];
   $lastname = $_GET['last-name'];
   $birthdate= $_GET['date-of-birth'];
-  $sex = $_GET['sex'];
+  $sex = $_GET['gender'];
   $employeeid = $_GET['employee-number'];
   $parttimefactor = $_GET['factor-time'];
 
