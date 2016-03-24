@@ -3,7 +3,7 @@
 define('DB_IP', "localhost");
 define('DB_NAME', "teun");
 define('DB_USER', "root");
-define('DB_PASS', "pass");
+define('DB_PASS', "");
 class Registration_Holiday extends PDO {
   private $PDO;
 
@@ -22,5 +22,17 @@ class Registration_Holiday extends PDO {
     $this->PDO->bindParam(':enddate', $enddate);
     $this->PDO->bindParam(':status', $status);
     $this->PDO->execute();
+  }
+
+  public function getPendingRequests()
+  {
+    $SQL = "SELECT * FROM registration_holidays WHERE status = 'pending'";
+
+    $this->PDO = $this->PDO->prepare($SQL);
+
+    $this->PDO->setFetchMode(PDO::FETCH_ASSOC);
+    $this->PDO->execute();
+    $results = $this->PDO->fetchAll();
+    return $results;
   }
 }

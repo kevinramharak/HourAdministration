@@ -1,4 +1,7 @@
+CREATE DATABASE teun;
+
 USE teun;
+
 CREATE TABLE Employees
 (
   ID int PRIMARY KEY AUTO_INCREMENT,

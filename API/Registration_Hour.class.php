@@ -3,7 +3,7 @@
 define('DB_IP', "localhost");
 define('DB_NAME', "teun");
 define('DB_USER', "root");
-define('DB_PASS', "pass");
+define('DB_PASS', "");
 class Registration_Hours extends PDO {
   private $PDO;
 

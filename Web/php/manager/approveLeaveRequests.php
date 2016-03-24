@@ -18,6 +18,17 @@
                     <th colspan="2">Verlofaanvraagdata</th>
                     <th >Akkoord</th>
                 </tr>
+                <?php
+                require_once '../../../API/Registration_Holiday.class.php';
+
+                $rh = new Registration_Holiday();
+
+                $results = $rh->getPendingRequests();
+                echo '<pre>';
+                print_r($results);
+                echo '</pre>';
+                /*
+                ?>
                 <tr>
                     <td>voornaam</td>
                     <td>achternaam</td>
@@ -25,6 +36,8 @@
                     <td>dd/mm/jjjj</td>
                     <td></td>
                 </tr>
+                */
+                ?>
             </table>
         </div>
         <div class="col-xs-12">
