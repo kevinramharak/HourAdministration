@@ -28,12 +28,10 @@
 /*
   registreren ziekte
 
-  $SQL = "INSERT INTO registration_illness VALUES (null, :employeeid, :date, :hours, :projectid)";
+  $SQL = "INSERT INTO registration_illness VALUES (null, :employeeid, :startdate, null)";
 
   :employeeid   = INT
-  :date         = DATE      example: '2016-03-24'
-  :hours        = INT       (<25)
-  :projectid    = INT
+  :startdate         = DATETIME      example: '2016-03-24T13:13'
  */
 /*
   Nieuwe medewerker toevoegen (2 queries !!!!)
