@@ -27,7 +27,7 @@
                                         <label>Vanaf:</label>
                                     </div>
                                     <div class="form-group col-xs-12 col-md-6">
-                                        <input type="time" class="col-md-7 form-control">
+                                        <input type="time" class="col-md-7 form-control" name="time">
                                     </div>
                                 </div>
                                 <div class="col-xs-12">
