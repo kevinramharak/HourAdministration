@@ -19,7 +19,7 @@
                     <label>Datum:</label>
                   </div>
                   <div class="form-group col-xs-12 col-md-6">
-                    <input type="date" class="col-md-8 form-control" id="from">
+                    <input type="date" class="col-md-8 form-control" name="date">
                   </div>
                 </div>
                 <div class="col-xs-12">
@@ -27,7 +27,7 @@
                     <label>Naam van de feestdag:</label>
                   </div>
                   <div class="form-group col-xs-12 col-md-6">
-                    <input type="text" class="col-md-6 form-control" id="until">
+                    <input type="text" class="col-md-6 form-control" name="name-holiday">
                   </div>
                 </div>
                 <div class="col-xs-12">
