@@ -19,7 +19,7 @@
                     <label>Naam:</label>
                   </div>
                   <div class="form-group col-xs-12 col-md-6">
-                    <input type="text" class="col-md-8 form-control">
+                    <input type="text" class="col-md-8 form-control" name="first-name">
                   </div>
                 </div>
                 <div class="col-xs-12">
@@ -27,7 +27,7 @@
                     <label>Tussenvoegsel:</label>
                   </div>
                   <div class="form-group col-xs-12 col-md-6">
-                    <input type="text" class="col-md-6 form-control">
+                    <input type="text" class="col-md-6 form-control" name="prefix">
                   </div>
                 </div>
                 <div class="col-xs-12">
@@ -35,7 +35,7 @@
                     <label>Achternaam:</label>
                   </div>
                   <div class="form-group col-xs-12 col-md-6">
-                    <input type="text" class="col-md-6 form-control">
+                    <input type="text" class="col-md-6 form-control" name="last-name">
                   </div>
                 </div>
                 <div class="col-xs-12">
@@ -43,7 +43,7 @@
                     <label>Geboortedatum:</label>
                   </div>
                   <div class="form-group col-xs-12 col-md-6">
-                    <input type="date" class="col-md-6 form-control">
+                    <input type="date" class="col-md-6 form-control" name="date-of-birth">
                   </div>
                 </div>
                 <div class="col-xs-12">
@@ -51,7 +51,8 @@
                     <label>Geslacht:</label>
                   </div>
                   <div class="form-group col-xs-12 col-md-6">
-                    <input type="text" class="col-md-6 form-control">
+                    <input type="radio" name="gender" value="m" checked name="sex">Man
+                    <input type="radio" name="gender" value="f" name="sex">Vrouw
                   </div>
                 </div>
                 <div class="col-xs-12">
@@ -59,7 +60,7 @@
                     <label>Werknemer nummer:</label>
                   </div>
                   <div class="form-group col-xs-12 col-md-6">
-                    <input type="text" class="col-md-6 form-control">
+                    <input type="number" class="col-md-6 form-control" name="employee-number">
                   </div>
                 </div>
                 <div class="col-xs-12">
@@ -67,7 +68,7 @@
                     <label>Deelfactortijd:</label>
                   </div>
                   <div class="form-group col-xs-12 col-md-6">
-                    <input type="text" class="col-md-6 form-control">
+                    <input type="number" min="0" max="1.000" step="0.001" class="col-md-6 form-control" name="factor-time">
                   </div>
                 </div>
                 <div class="col-xs-12">
