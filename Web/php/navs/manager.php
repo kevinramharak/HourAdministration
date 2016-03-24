@@ -13,14 +13,14 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="#">Goedkeuren verlofaanvragen</a></li>
-                <li><a href="#">Wijzigen projecturen</a></li>
+                <li><a href="../manager/approveLeaveRequests.php">Goedkeuren verlofaanvragen</a></li>
+                <li><a href="../manager/modifyProjectHours.php">Wijzigen projecturen</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Overzichten <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Overzicht werknemers</a></li>
-                        <li><a href="#">Details werknemers</a></li>
-                        <li><a href="#">Totale gegevens werknemers</a></li>
+                        <li><a href="../manager/allFellowWorkers.php">Overzicht werknemers</a></li>
+                        <li><a href="../manager/fellowWorker.php">Details werknemers</a></li>
+                        <li><a href="../manager/statistics.php">Totale gegevens werknemers</a></li>
                     </ul>
                 </li>
             </ul>

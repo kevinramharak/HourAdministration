@@ -5,7 +5,7 @@
         <div class="col-xs-12">
             <div class="row">
                 <div class="col-xs-12 col-md-6">
-                    <a href="vacation.php" class="menuButton"><button type="button" class="btn btn-default btn-lg btn-block menuButton" href="vacation.php">Vrij aanvragen</button></a>
+                    <a href="vacation.php" class="menuButton"><button type="button" class="btn btn-default btn-lg btn-block menuButton">Vrij aanvragen</button></a>
                 </div>
                 <div class="col-xs-12 col-md-6">
                     <a href="sick.php" class="menuButton"><button type="button" class="btn btn-default btn-lg btn-block menuButton">Ziek melden</button></a>
