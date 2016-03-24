@@ -89,6 +89,14 @@ CREATE TABLE NextPartTimeFactor
 
 CREATE TABLE MinOccupationPerFunction
 (
+  ID INT PRIMARY KEY AUTO_INCREMENT,
   Function VARCHAR(20),
   MinOccupation INT
+);
+
+CREATE TABLE Holidays
+(
+  ID INT PRIMARY KEY AUTO_INCREMENT,
+  Date DATE,
+  Name VARCHAR(20)
 );
