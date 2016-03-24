@@ -13,13 +13,13 @@
           <div class="panel panel-default">
             <div class="panel-heading">Medewerker toevoegen</div>
             <div class="panel-body">
-              <form>
+              <form action="../actions/addEmployee.php">
                 <div class="col-xs-12">
                   <div class="col-xs-12 col-md-6">
                     <label>Naam:</label>
                   </div>
                   <div class="form-group col-xs-12 col-md-6">
-                    <input type="date" class="col-md-8 form-control" id="from">
+                    <input type="text" class="col-md-8 form-control">
                   </div>
                 </div>
                 <div class="col-xs-12">
@@ -27,7 +27,7 @@
                     <label>Tussenvoegsel:</label>
                   </div>
                   <div class="form-group col-xs-12 col-md-6">
-                    <input type="text" class="col-md-6 form-control" id="until">
+                    <input type="text" class="col-md-6 form-control">
                   </div>
                 </div>
                 <div class="col-xs-12">
@@ -35,7 +35,7 @@
                     <label>Achternaam:</label>
                   </div>
                   <div class="form-group col-xs-12 col-md-6">
-                    <input type="text" class="col-md-6 form-control" id="until">
+                    <input type="text" class="col-md-6 form-control">
                   </div>
                 </div>
                 <div class="col-xs-12">
@@ -43,7 +43,7 @@
                     <label>Geboortedatum:</label>
                   </div>
                   <div class="form-group col-xs-12 col-md-6">
-                    <input type="text" class="col-md-6 form-control" id="until">
+                    <input type="date" class="col-md-6 form-control">
                   </div>
                 </div>
                 <div class="col-xs-12">
@@ -51,7 +51,7 @@
                     <label>Geslacht:</label>
                   </div>
                   <div class="form-group col-xs-12 col-md-6">
-                    <input type="text" class="col-md-6 form-control" id="until">
+                    <input type="text" class="col-md-6 form-control">
                   </div>
                 </div>
                 <div class="col-xs-12">
@@ -59,7 +59,7 @@
                     <label>Werknemer nummer:</label>
                   </div>
                   <div class="form-group col-xs-12 col-md-6">
-                    <input type="text" class="col-md-6 form-control" id="until">
+                    <input type="text" class="col-md-6 form-control">
                   </div>
                 </div>
                 <div class="col-xs-12">
@@ -67,7 +67,7 @@
                     <label>Deelfactortijd:</label>
                   </div>
                   <div class="form-group col-xs-12 col-md-6">
-                    <input type="text" class="col-md-6 form-control" id="until">
+                    <input type="text" class="col-md-6 form-control">
                   </div>
                 </div>
                 <div class="col-xs-12">
