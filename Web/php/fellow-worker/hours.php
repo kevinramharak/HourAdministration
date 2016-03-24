@@ -27,7 +27,7 @@
                                         <label>Uren:</label>
                                     </div>
                                     <div class="form-group col-xs-12 col-md-6">
-                                        <input type="number" min="1" max="24" class="col-md-7 form-control">
+                                        <input type="number" min="1" max="24" class="col-md-7 form-control" name="uren">
                                     </div>
                                 </div>
                                 <div class="col-xs-12">
