@@ -11,7 +11,7 @@ if(isset($_GET['date']) && isset($_GET['name-holiday'])){
 
   $hol->register($date, $name);
 
-  header("Location: http://localhost/HourAdministration/Web/php/administrative-assistant/home.php");
+  header("Location: http://localhost/HourAdministration/Web/php/administrative-assistent/home.php");
 } else {
-  header("Location: http://localhost/HourAdministration/Web/php/administrative-assistant/holidays.php");
+  header("Location: http://localhost/HourAdministration/Web/php/administrative-assistent/holidays.php");
 }

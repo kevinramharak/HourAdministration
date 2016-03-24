@@ -13,7 +13,7 @@
           <div class="panel panel-default">
             <div class="panel-heading">Feestdagen toevoegen</div>
             <div class="panel-body">
-              <form action>
+              <form action="../actions/addHoliday.php" method="get">
                 <div class="col-xs-12">
                   <div class="col-xs-12 col-md-6">
                     <label>Datum:</label>

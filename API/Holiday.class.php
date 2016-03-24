@@ -13,7 +13,7 @@ class Holiday extends PDO {
   }
 
   public function register($date, $name){
-    $this->PDO = $this->PDO->prepare("INSERT INTO holidays VALUES (null, :date, :name");
+    $this->PDO = $this->PDO->prepare("INSERT INTO holidays VALUES (null, :date, :name)");
     $this->PDO->bindParam(':date', $date);
     $this->PDO->bindParam(':name', $name);
     $this->PDO->execute();
