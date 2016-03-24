@@ -15,6 +15,8 @@ class Registration_Illness extends PDO {
   public function register($employeeid, $time){
     $this->PDO = $this->PDO->prepare("INSERT INTO registration_illness VALUES (null, :employeeid, :startdate, null)");
     $this->PDO->bindParam(':employeeid', $employeeid);
-    $this->PDO->bindParam(':startdate', $time)
+    $datetime = date("Y-m-d").$time;
+    $this->PDO->bindParam(':startdate', $datetime);
+    $this->PDO->execute();
   }
 }
