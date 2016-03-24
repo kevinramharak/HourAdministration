@@ -13,7 +13,7 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">Uren registreren</div>
                         <div class="panel-body">
-                            <form>
+                            <form action="../actions/registerHour.class.php" method="get">
                                 <div class="col-xs-12">
                                     <div class="col-xs-12 col-md-6">
                                         <label>Datum:</label>

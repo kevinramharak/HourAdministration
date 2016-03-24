@@ -16,7 +16,7 @@ class Registration_Hours extends PDO {
     $this->PDO = $this->PDO->prepare("INSERT INTO registration_hours VALUES (null, :employeeid, :date, :hours, :projectid)");
 
     $date = date('Y-m-d');
-    $id = '11111111';
+    $id = '1';
 
     $this->PDO->bindParam(':employeeid',$employeeid);
     $this->PDO->bindParam(':date',$date);
