@@ -52,4 +52,7 @@
   :employeeid = INT
   :password   = VARCHAR(70)           # is hashed
   :permission = ENUM ('0', '1', '2')
+
+  password hash = password_hash('teun', PASSWORD_DEFAULT) = $2y$10$tWVgjNUQ2ih4eopcxCLwD.wUmA5ToZgbVBHvPHdQXaQb35aiWpUOW
+
  */

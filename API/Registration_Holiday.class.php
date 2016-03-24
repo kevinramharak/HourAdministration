@@ -19,7 +19,7 @@ class Registration_Holiday extends PDO {
     $this->PDO = $this->PDO->prepare($SQL);
     $this->PDO->bindParam(':employeeid', $employeeid);
     $this->PDO->bindParam(':startdate', $startdate);
-    $this->PDO->bindParam(':enddate', $employeeid);
+    $this->PDO->bindParam(':enddate', $enddate);
     $this->PDO->bindParam(':status', $status);
     $this->PDO->execute();
   }
