@@ -16,18 +16,18 @@
                             <form>
                                 <div class="col-xs-12">
                                     <div class="col-xs-12 col-md-6">
-                                        <label>Van:</label>
+                                        <label>Datum:</label>
                                     </div>
                                     <div class="form-group col-xs-12 col-md-6">
-                                        <input type="time" class="col-md-7 form-control">
+                                        <?php echo date("d-m-Y"); ?>
                                     </div>
                                 </div>
                                 <div class="col-xs-12">
                                     <div class="col-xs-12 col-md-6">
-                                        <label>Tot:</label>
+                                        <label>Uren:</label>
                                     </div>
                                     <div class="form-group col-xs-12 col-md-6">
-                                        <input type="time" class="col-md-7 form-control">
+                                        <input type="number" min="1" max="24" class="col-md-7 form-control">
                                     </div>
                                 </div>
                                 <div class="col-xs-12">
