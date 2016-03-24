@@ -1,4 +1,5 @@
 <?php
+session_start();
 if(isset($_GET['from'])&&isset($_GET['until'])&&isset($_SESSION['employeeid']))
 {
   require_once '../../../API/Registration_Holiday.class.php';

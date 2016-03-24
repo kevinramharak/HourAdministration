@@ -1,22 +1,40 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: kevin
- * Date: 23-3-2016
- * Time: 20:04
- */
-
 /*
   Vakantie aanvragen
 
-  $SQL = "INSERT INTO registration_holiday VALUES (null, :employeeid, :startdate, :enddate, :status, null)";
+  $SQL = "INSERT INTO registration_holidays VALUES (null, :employeeid, :startdate, :enddate, :status, null)";
 
   :employeeid = INT
   :startdate  = DATE        example: '2015-05-23'
   :enddate    = DATE        example: '2015-06-30'
   :status     = ENUM ('0', '1', '2')
- */
 
+  Goedkeuren vakantie aanvraag
+
+  $SQL = "UPDATE registration_holidays SET status = 'approved' WHERE ID = :id";
+
+  :id   = INT
+
+  Afwijzen vakantie aanvraag
+
+  $SQL = "UPDATE registration_holidays SET status = 'denied', reason = :reason WHERE ID = :id";
+
+  :id     = INT
+  :reason = VARCHAR(500)    example: 'Not enough workers for that day';
+*/
+/*
+
+*/
+/*
+  registreren ziekte
+
+  $SQL = "INSERT INTO registration_illness VALUES (null, :employeeid, :date, :hours, :projectid)";
+
+  :employeeid   = INT
+  :date         = DATE      example: '2016-03-24'
+  :hours        = INT       (<25)
+  :projectid    = INT
+ */
 /*
   Nieuwe medewerker toevoegen (2 queries !!!!)
 1.

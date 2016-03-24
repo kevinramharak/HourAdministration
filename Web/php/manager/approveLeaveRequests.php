@@ -26,7 +26,7 @@
                     <td></td>
                 </tr>
                 <?php
-                    require_once "../../../API/index.php";
+                    require_once "../../../API/Users.class.php";
                     $s = new Submits();
                     $u = new Users();
                     for($i = 0; $i < 1; $i++) {
