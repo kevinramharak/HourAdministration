@@ -16,6 +16,22 @@
               <form>
                 <div class="col-xs-12">
                   <div class="col-xs-12 col-md-6">
+                    <label>Werknemer:</label>
+                  </div>
+                  <div class="dropdown col-md-6">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Werknemer
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#">ID</a></li>
+                      <li><a href="#">ID</a></li>
+                      <li><a href="#">ID</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="col-xs-12 col-md-6">
                     <label>Naam:</label>
                   </div>
                   <div class="form-group col-xs-12 col-md-6">
@@ -72,7 +88,7 @@
                 </div>
                 <div class="col-xs-12">
                   <div class="form-group">
-                    <button type="submit" class="btn btn-primary">Werknemer toevoegen</button>
+                    <button type="submit" class="btn btn-primary">Werknemer aanpassen</button>
                   </div>
                 </div>
               </form>
