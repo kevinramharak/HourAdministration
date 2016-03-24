@@ -14,3 +14,14 @@ Download HourAdministration
 **Daan Janssen**
 
 `Kut applicatie.`
+
+### For the team
+**MySQL server details**
+
+Host: localhost (Port 3306)
+
+Username: daanjans_ha
+
+Password: adminadmin
+
+Database: daanjans_ha
